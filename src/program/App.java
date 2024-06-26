@@ -16,9 +16,11 @@ public class App {
 		String wordPlay = null;
 		
 		System.out.println("Bem-vindo ao jogo da forca do condado, o jogador 1 vai definir uma palavra em um tema e o jogador 2 vai tentar adivinhar");
+		System.out.println();
 		System.out.println("Digite a palavra: ");
 		String word = sc.next();
 		System.out.println("Digite uma dica: ");
+		word = word.toLowerCase();
 		String tema = sc.next();
 		Words wordGame = new Words(word);
 		
